@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import random
-number = -98
+number = 98
 if number > 0:
-    print("%d is positive".format(number))
-if number == 0:
-    print("%d is zero".format(number))
-if number < 0:
-    print("%d is negative".format(number))
+    print("{} is positive".format(number))
+elif number == 0:
+    print("{} is zero".format(number))
+else:
+    print("{} is negative".format(number))
