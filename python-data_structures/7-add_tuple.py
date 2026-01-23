@@ -16,7 +16,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         b2 = tuple_b[1]
     else:
         b2 = 0
-    a + b 
+    a + b
     a1 + b2
 
     return (a + b, a1 + b2)
