@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define a class"""
+
 class Square:
     def __init__(self, size=0):
         """Get the size"""

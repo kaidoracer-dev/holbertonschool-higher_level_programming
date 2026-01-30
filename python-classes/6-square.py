@@ -1,18 +1,20 @@
 #!/usr/bin/python3
+"""Define a class"""
+
 class Square:
-    
+
     """Defines a square"""
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """Create a square with size and position"""
         self.size = size
         self.position = position
-    
+
     @property
     def size(self):
         """Get the size"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Set the size with checks"""
@@ -21,7 +23,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """Get the position"""
@@ -41,7 +43,7 @@ class Square:
     def area(self):
         """Return the area"""
         return self.__size * self.__size
-    
+
     def my_print(self):
         """Print the square using #"""
         if self.size == 0:

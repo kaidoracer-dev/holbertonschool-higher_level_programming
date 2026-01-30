@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define a class"""
+
 class Square:
     def __init__(self, size=0):
         self.size = size
@@ -20,4 +22,3 @@ class Square:
         else:
             for _ in range(self.__size):
                 print("#" * self.size)
-  
