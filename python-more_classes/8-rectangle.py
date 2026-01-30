@@ -12,7 +12,7 @@ class Rectangle:
         """Create rectangle and count instances"""
         self.width = width
         self.height = height
-        Rectangle.number_of_instance += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -66,7 +66,7 @@ class Rectangle:
     def __del__(self):
         """Delete instance message and decrease counter"""
         print("Bye rectangle...")
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
 
     def bigger_or_equal(rect_1, rect_2):
         """Return the bigger rectangle based on area"""
