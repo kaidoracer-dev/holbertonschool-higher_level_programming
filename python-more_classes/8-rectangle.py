@@ -6,6 +6,7 @@ class Rectangle:
     """Defines a rectangle"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Create rectangle and count instances"""
@@ -55,12 +56,8 @@ class Rectangle:
         """Return rectangle with print_symbol"""
         if self.width == 0 or self.height == 0:
             return ""
-        rectangle lines = []
-        for _ in range(self.height):
-            line = "#" * self.width
-            rectangle_lines.append(line)
-        rectangle_string = "\n".join(rectangle_lines)
-        return rectangle_string
+        symbol = str(self.print_symbol)
+        return "\n".join([symbol * self.width for _ in range(self.height)])
 
     def __repr__(self):
         """Return string to recreate rectangle"""

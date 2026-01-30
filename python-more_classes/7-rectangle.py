@@ -44,12 +44,10 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """Return rectangle with print_symbol"""
         if self.width == 0 or self.height == 0:
             return ""
-        lines = []
-        for _ in range(self.height):
-            lines.append(str(self.print_symbol) * self.width)
-            return "\n".join(lines)
+        return "\n".join(["#" * self.width for _ in range(self.height)])
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.width, self.height)
