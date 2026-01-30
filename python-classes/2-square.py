@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """Define a class"""
 
+
 class Square:
+    """Defines a square"""
+
     def __init__(self, size=0):
         """Set the size with checks"""
         if not isinstance(size, int):
