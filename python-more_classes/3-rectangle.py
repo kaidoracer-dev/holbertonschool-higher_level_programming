@@ -50,7 +50,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return rectangle with print_symbol"""
+        """Return rectangle represented with the caracter '#'."""
         if self.width == 0 or self.height == 0:
             return ""
         lines = []
