@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""import the file 9-rectangle.py"""
+"""Define class Square"""
+
+
 Rectangle = __import__('9-rectangle').Rectangle
-"""Create a class"""
 
 
 class Square(Rectangle):
