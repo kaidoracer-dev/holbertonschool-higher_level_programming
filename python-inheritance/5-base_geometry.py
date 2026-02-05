@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Create class """
+"""Create a class """
 
 
 class BaseGeometry:
+  """Create a class"""
+  pass
