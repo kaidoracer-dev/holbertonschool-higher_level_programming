@@ -12,9 +12,9 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         super().__init__(size, size)
 
+    def area(self):
+        """Return area of the square"""
+        return self.size * self.size
+
     def __str__(self):
-        """Return the following square description"""
-        return "[Square] {}/{}".format(
-            self._Rectangle__width
-            self._Rectangle__height
-        )
+        return "[square] {}/{}".format(self.__size, self.__size)
