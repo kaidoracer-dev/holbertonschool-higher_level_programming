@@ -11,6 +11,9 @@ if __name__ == "__main__":
     if number == 1:
         print("1 argument:")
 
+    if number > 1:
+        print(f"{number} arguments:")
+
     if number > 0:
         for i in range(1, len(argv)):
             print("{}: {}".format(i, argv[i]))
