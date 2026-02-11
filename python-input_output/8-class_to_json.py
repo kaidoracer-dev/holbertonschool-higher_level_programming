@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define
+"""Define"""
 
 
 def class_to_json(obj):
