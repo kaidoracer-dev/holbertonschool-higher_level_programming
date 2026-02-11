@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define"""
+
 
 def append_write(filename="", text=""):
     """appends a string at the end of a text file UTF8
