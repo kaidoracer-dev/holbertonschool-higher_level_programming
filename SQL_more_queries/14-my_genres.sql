@@ -1,4 +1,5 @@
 -- Import the database dump from hbtn_0d_tvshows
+
 SELECT genres.name
 FROM tv_shows
 JOIN tv_show_genres ON tv_shows_id = tv_show_genres.tv_show_id
