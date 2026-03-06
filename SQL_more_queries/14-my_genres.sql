@@ -1,8 +1,8 @@
 -- Import the database dump from hbtn_0d_tvshows
 
-SELECT genres.name
-FROM tv_shows
-JOIN tv_show_genres ON tv_shows_id = tv_show_genres.tv_show_id
-JOIN genres ON tv_show_genres.genre_id = genres_id
+SELECT tv.genres.name
+FROM tv_genres
+JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
+JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
 WHERE tv_shows.title = 'Dexter'
-ORDER BY genre.name ASC;
+ORDER BY tv_genre.name ASC;
