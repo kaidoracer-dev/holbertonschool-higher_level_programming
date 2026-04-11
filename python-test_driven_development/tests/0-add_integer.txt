@@ -21,3 +21,18 @@ TypeError: a must be an integer
 -15
 >>> add_integer(0)
 98
+Testing with float overflow
+---------------------------
+
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+Testing with NaN
+----------------
+
+>>> add_integer(float('nan'), 0)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
