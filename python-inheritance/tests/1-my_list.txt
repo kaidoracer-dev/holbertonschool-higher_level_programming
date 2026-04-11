@@ -47,3 +47,10 @@ Testing with another list
 [-2, 3, 7, 10]
 >>> print(another_list)
 [10, -2, 7, 3]
+
+Testing with an empty list
+--------------------------
+
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
